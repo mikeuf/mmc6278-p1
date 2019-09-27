@@ -70,9 +70,50 @@ h2 {
 .about-p {
   padding: 10px 3%;
 }
+.about-p .greybox-small {
+  border-radius: 0.5rem;
+  background-color: rgba(105, 105, 105, 0.85);
+  color: white;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.about-p .greybox-small p {
+  padding-top: 10px;
+}
+.about-p .greybox-small .hours {
+  list-style-type: none;
+  padding: 0 15px 15px 15px;
+}
 .about-p .greybox {
   border-radius: 0.5rem;
   background-color: rgba(105, 105, 105, 0.85);
   padding: 10px 2.5%;
+  margin-bottom: 10px;
   color: white;
+}
+.about-pics {
+  text-align: center;
+}
+.about-pics .about-image {
+  height: 175px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .about-image {
+    height: 225px !important;
+  }
+}
+@media (min-width: 992px) {
+  .about-image {
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+  }
+}
+@media (min-width: 1050px) {
+  .about-image {
+    height: 250px !important;
+  }
 }
