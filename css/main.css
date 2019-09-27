@@ -1,0 +1,119 @@
+.navbar {
+  padding: 0px !important;
+}
+.navbar #nav-logo {
+  width: 100px;
+}
+.navbar .nav {
+  background-color: #e3001b;
+  border-radius: 0.5rem;
+  margin-bottom: 1.2%;
+  width: 100%;
+}
+.navbar .nav .nav-link {
+  color: #f4c844;
+}
+footer {
+  background-color: #0e133e;
+  color: white;
+  padding: 1%;
+}
+footer .border {
+  border-top: 2rem !important;
+  border-color: #5d6578;
+}
+.hero {
+  background-image: url('../images/pizzaplanet.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+.mainlogo {
+  width: 10%;
+}
+.jumbotron {
+  border-radius: 0;
+  margin-bottom: 1rem;
+}
+.btn {
+  color: #f4c844;
+  background-color: #e3001b;
+  border-color: #f4c844;
+}
+.story {
+  background-color: #cacaca;
+}
+h1 {
+  color: #e3001b;
+}
+h2 {
+  text-align: center;
+}
+.col-12 {
+  padding-bottom: 1.5%;
+}
+.maintext {
+  margin-top: 3rem;
+}
+.about-main {
+  background-image: url('../images/missioncontrol.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about-h2 {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  color: white;
+}
+.about-p {
+  padding: 10px 3%;
+}
+.about-p .greybox-small {
+  border-radius: 0.5rem;
+  background-color: rgba(105, 105, 105, 0.85);
+  color: white;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.about-p .greybox-small p {
+  padding-top: 10px;
+}
+.about-p .greybox-small .hours {
+  list-style-type: none;
+  padding: 0 15px 15px 15px;
+}
+.about-p .greybox {
+  border-radius: 0.5rem;
+  background-color: rgba(105, 105, 105, 0.85);
+  padding: 10px 2.5%;
+  margin-bottom: 10px;
+  color: white;
+}
+.about-pics {
+  text-align: center;
+}
+.about-pics .about-image {
+  height: 175px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .about-image {
+    height: 225px !important;
+  }
+}
+@media (min-width: 992px) {
+  .about-image {
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+  }
+}
+@media (min-width: 1050px) {
+  .about-image {
+    height: 250px !important;
+  }
+}
