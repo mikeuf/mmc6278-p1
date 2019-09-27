@@ -23,7 +23,7 @@ footer .border {
   border-color: #5d6578;
 }
 .hero {
-  background-image: url('images/pizzaplanet.jpg');
+  background-image: url('../images/pizzaplanet.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -55,4 +55,24 @@ h2 {
 }
 .maintext {
   margin-top: 3rem;
+}
+.about-main {
+  background-image: url('../images/missioncontrol.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about-h2 {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  color: white;
+}
+.about-p {
+  padding: 10px 3%;
+}
+.about-p .greybox {
+  border-radius: 0.5rem;
+  background-color: rgba(105, 105, 105, 0.85);
+  padding: 10px 2.5%;
+  color: white;
 }
