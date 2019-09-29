@@ -111,12 +111,14 @@ h2 {
   background-position: center;
 }
 .directions-row {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 3%;
 }
-.directions-col {
-  padding: 5%;
-  opacity: 0.6;
+.directions-col-left {
+  padding: 5% 0 5% 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.directions-col-right {
+  padding: 5% 5% 0 5%;
 }
 .directions-h2 {
   font-size: 3rem;
