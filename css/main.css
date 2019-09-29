@@ -75,8 +75,6 @@ h2 {
   background-color: rgba(105, 105, 105, 0.85);
   color: white;
   text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -100,6 +98,12 @@ h2 {
 .about-pics .about-image {
   height: 175px;
   margin-bottom: 10px;
+}
+.directions-main {
+  background-image: url('../images/directions-background-2019-09-29a.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 768px) {
   .about-image {
