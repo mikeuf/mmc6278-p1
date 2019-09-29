@@ -26,6 +26,9 @@ footer .border {
   border-top: 2rem !important;
   border-color: #5d6578;
 }
+footer h3 {
+  font-size: 0.8rem;
+}
 .hero {
   background-image: url('../images/pizzaplanet.jpg');
   background-repeat: no-repeat;
@@ -111,12 +114,19 @@ h2 {
   background-size: cover;
   background-position: center;
 }
+.menu-logo {
+  width: 50%;
+  margin: 5% 7% !important;
+}
 .menu-h2 {
   padding-top: 25px;
   padding-bottom: 10px;
   color: white;
+  font-size: 1.5rem;
 }
 .bluebox {
+  width: 75%;
+  margin: 0 auto !important;
   border-radius: 0.5rem;
   background-color: rgba(55,122,229,.75);
   padding: 10px 2.5%;
@@ -128,7 +138,8 @@ h2 {
 }
 .menu-h3 {
   font-size: 1rem;
-  font-family: 'Planet N', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
 }
 .menu-list {
   list-style-type: none;
@@ -136,11 +147,29 @@ h2 {
 .menu-h3, .menu-list {
   text-align: center;
 }
+.menu-p {
+  margin: 5%;
+  padding-bottom: 5%;
+}
 .menu-p p {
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
+.menu-list li {
+  letter-spacing: 5px;
+  font-family: 'Planet N', sans-serif;
+  padding: 2%;
+  margin-top: 1%;
+  font-size: 0.8rem;
+  text-align: center;
+}
 
+
+@media (min-width: 600px) {
+  .menu-list li {
+    font-size: 0.9rem;
+  }
+}
 @media (min-width: 768px) {
   .about-image {
     height: 225px !important;
@@ -151,15 +180,33 @@ h2 {
   .menu-p p, .menu-list {
     font-size: 1.1rem;
   }
+  .menu-h2 {
+    font-size: 2rem;
+  }
+  .menu-list li {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 992px) {
   .about-image {
     margin-top: 20px;
     margin-bottom: 20px !important;
   }
+  .menu-p p {
+    font-size: 1.2rem;
+  }
+  footer h3 {
+    font-size: 0.9rem;
+  }
 }
 @media (min-width: 1050px) {
   .about-image {
     height: 250px !important;
+  }
+  .menu-list li {
+    font-size: 1.2rem;
+  }
+  .menu-h3 {
+    font-size: 1.5rem;
   }
 }
