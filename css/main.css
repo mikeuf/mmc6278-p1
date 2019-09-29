@@ -110,6 +110,23 @@ h2 {
   background-size: cover;
   background-position: center;
 }
+.directions-row {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.directions-col {
+  padding: 5%;
+  opacity: 0.6;
+}
+.directions-h2 {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: left;
+}
+.directions-body {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
 @media (min-width: 768px) {
   .about-image {
     height: 225px !important;
