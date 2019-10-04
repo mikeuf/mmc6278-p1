@@ -172,7 +172,17 @@ h2 {
   font-size: 0.8rem;
   text-align: center;
 }
-
+.menu-food {
+  display: flex;
+}
+.meal {
+  width: 60%;
+}
+.container {
+  display: flex;
+  padding: 2%;
+  justify-content: space-between;
+}
 
 @media (min-width: 600px) {
   .menu-list li {
