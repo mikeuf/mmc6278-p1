@@ -141,7 +141,7 @@ h2 {
   padding: 10px 2.5%;
   margin: 10px;
   color: white;
-  border-width: 20%;
+  border-width: 5px;
   border-style: solid;
   border-color: rgb(217, 66, 48);
 }
@@ -150,8 +150,9 @@ h2 {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.5px;
 }
-.menu-list {
+.menu-list li {
   list-style-type: none;
+  margin-top: 2%;
 }
 .menu-h3, .menu-list {
   text-align: center;
@@ -174,20 +175,71 @@ h2 {
 }
 .menu-food {
   display: flex;
-  padding: 2%;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
 }
 .meal {
   width: 40%;
 }
 .alien {
-  width: 100%;
+  width: 50%;
+}
+.family-meal {
+  width: 50%;
+  margin: 3%;
 }
 .container {
   display: flex;
   padding: 2%;
   justify-content: space-between;
 }
+ul .pizza li {
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.65rem;
+  text-align: center;
+  letter-spacing: normal;
+}
+ul .salads li {
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.65rem;
+  text-align: center;
+  letter-spacing: normal;
+}
+ul .snacks li {
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.65rem;
+  text-align: center;
+  letter-spacing: normal;
+}
+ul .beverages li {
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.65rem;
+  text-align: center;
+  letter-spacing: normal;
+}
+ul .kids li {
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.65rem;
+  text-align: center;
+  letter-spacing: normal;
+}
+ul .desserts li {
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.65rem;
+  text-align: center;
+  letter-spacing: normal;
+}
+.underline {
+  border-bottom: 2px solid #d94230;
+}
+
 /* Sticky footer */
 .container-fluid {
   display: flex;
@@ -203,6 +255,24 @@ h2 {
 @media (min-width: 600px) {
   .menu-list li {
     font-size: 0.9rem;
+  }
+  ul .pizza li {
+    font-size: 0.8rem;
+  }
+  ul .salads li {
+    font-size: 0.8rem;
+  }
+  ul .snacks li {
+    font-size: 0.8rem;
+  }
+  ul .beverages li {
+    font-size: 0.8rem;
+  }
+  ul .kids li {
+    font-size: 0.8rem;
+  }
+  ul .desserts {
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 768px) {
@@ -222,9 +292,21 @@ h2 {
   .menu-list li {
     font-size: 1rem;
   }
+  .menu-food {
+    width: 100%;
+    display: flex;
+  }
+  figure {
+    display: flex;
+    width: 33.33333%;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
 =======
 >>>>>>> 9fdff3185fd309abd3014fbb26df229095ad5771
 }
+
 @media (min-width: 992px) {
   .about-image {
     margin-top: 20px;
@@ -235,6 +317,24 @@ h2 {
   }
   footer h3 {
     font-size: 0.9rem;
+  }
+  ul .pizza li {
+    font-size: 1rem;
+  }
+  ul .salads li {
+    font-size: 1rem;
+  }
+  ul .snacks li {
+    font-size: 1rem;
+  }
+  ul .beverages li {
+    font-size: 1rem;
+  }
+  ul .kids li {
+    font-size: 1rem;
+  }
+  ul .desserts li {
+    font-size: 1rem;
   }
 }
 @media (min-width: 1050px) {
