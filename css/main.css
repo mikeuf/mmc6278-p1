@@ -48,6 +48,15 @@ footer h3 {
   background-color: #e3001b;
   border-color: #f4c844;
 }
+.order-button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #f4c844;
+}
+button .order-button {
+  padding: 2%;
+}
 .story {
   background-color: #cacaca;
 }
