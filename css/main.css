@@ -174,9 +174,14 @@ h2 {
 }
 .menu-food {
   display: flex;
+  padding: 2%;
+  justify-content: space-between;
 }
 .meal {
-  width: 60%;
+  width: 40%;
+}
+.alien {
+  width: 100%;
 }
 .container {
   display: flex;
