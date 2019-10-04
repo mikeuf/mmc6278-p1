@@ -183,6 +183,17 @@ h2 {
   padding: 2%;
   justify-content: space-between;
 }
+/* Sticky footer */
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.menu-main {
+  flex-grow: 1;
+}
+/* Sticky footer */
+
 
 @media (min-width: 600px) {
   .menu-list li {
