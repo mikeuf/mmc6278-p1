@@ -19,16 +19,17 @@
     margin-bottom: 1.2%;
     width: 85%;
     overflow: hidden;
-    transition: height 0.5s;
+    transition:height 0.5s;
     height:0px;
     .nav-link {
       color: #f4c844;
+      font-family: 'roboto';
     }
   }
 }
 .show-mobile-menu {
   height:120px;
-  transition: height 0.5s;
+  transition:height 0.5s;
 }
 #hamburger {
   display:block;
@@ -52,6 +53,7 @@ footer {
 
     h3 {
       font-size: 0.8rem;
+      font-family: 'Roboto';
     }
 
   }
@@ -75,13 +77,12 @@ footer {
   border-radius: 0;
   margin-bottom:1rem;
 }
-.nav-link {
-  font-family: 'roboto';
+
   .nav-link:hoover {
     font-weight:bold;
     color: #f4c844;
   }
-}
+
 
 .btn {
   color: #f4c844;
@@ -119,23 +120,20 @@ h2 {
   font-size:1.5rem;
   font-weight: bold;
 }
-h3{
-  font-family:'roboto';
-  font-size:1rem;
-}
+
 
 .col-12 {
   padding-bottom: 1.5%;
   font-family: 'roboto';
-font-size:1.2rem;
+  font-size:1.2rem;
 }
 
 .maintext {
   margin-top: 3rem;
   text-align:center;
-font-family: 'roboto';
-font-size: 1em;
-word-break: break-all;
+  font-family: 'roboto';
+  font-size: 1em;
+  word-break: break-all;
 }
 
 
@@ -321,6 +319,16 @@ ul {
     font-size: 1rem;
   }
 
+}
+
+@media (min-width:890px) {
+  .nav {
+    height:40px;
+  }
+
+  #hamburger {
+    display:none;
+  }
 }
 
 @media (min-width: 992px) {

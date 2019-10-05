@@ -23,6 +23,7 @@
 }
 .navbar .nav .nav-link {
   color: #f4c844;
+  font-family: 'roboto';
 }
 .show-mobile-menu {
   height: 120px;
@@ -49,6 +50,7 @@ footer .border {
 }
 footer .border h3 {
   font-size: 0.8rem;
+  font-family: 'Roboto';
 }
 .hero {
   background-image: url('../images/pizzaplanet.jpg');
@@ -64,10 +66,7 @@ footer .border h3 {
   border-radius: 0;
   margin-bottom: 1rem;
 }
-.nav-link {
-  font-family: 'roboto';
-}
-.nav-link .nav-link:hoover {
+.nav-link:hoover {
   font-weight: bold;
   color: #f4c844;
 }
@@ -103,10 +102,6 @@ h2 {
   font-family: 'roboto';
   font-size: 1.5rem;
   font-weight: bold;
-}
-h3 {
-  font-family: 'roboto';
-  font-size: 1rem;
 }
 .col-12 {
   padding-bottom: 1.5%;
@@ -289,6 +284,14 @@ ul .desserts {
   }
   .menu-list li {
     font-size: 1rem;
+  }
+}
+@media (min-width: 890px) {
+  .nav {
+    height: 40px;
+  }
+  #hamburger {
+    display: none;
   }
 }
 @media (min-width: 992px) {
