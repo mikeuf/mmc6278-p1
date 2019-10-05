@@ -95,15 +95,30 @@ footer .border h3 {
 }
 h1 {
   color: #e3001b;
+  font-family: 'Planet N';
+  font-size: 1.8rem;
 }
 h2 {
   text-align: center;
+  font-family: 'roboto';
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+h3 {
+  font-family: 'roboto';
+  font-size: 1rem;
 }
 .col-12 {
   padding-bottom: 1.5%;
+  font-family: 'roboto';
+  font-size: 1.2rem;
 }
 .maintext {
   margin-top: 3rem;
+  text-align: center;
+  font-family: 'roboto';
+  font-size: 1em;
+  word-break: break-all;
 }
 .menu-main {
   background-image: url('images/pizzaplanet.jpg');
