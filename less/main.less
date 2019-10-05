@@ -1,14 +1,11 @@
-@import 'variables.less';
-
-<<<<<<< HEAD
+@import 'variables';
 //fonts
 @font-face {
   font-family: 'Planet N';
   src: ufl('../fonts/planetn.ttf')
 }
 
-=======
->>>>>>> 9fdff3185fd309abd3014fbb26df229095ad5771
+
 //Header All Pages
 .navbar {
   padding: 0px !important;
@@ -16,21 +13,16 @@
     width:100px;
   }
   .nav {
-      background-color: #e3001b;
-      border-radius: 0.5rem;
-      margin-bottom: 1.2%;
-      width: 100%;
-      .nav-link {
-        color: #f4c844;
-      }
+    background-color: #e3001b;
+    border-radius: 0.5rem;
+    margin-bottom: 1.2%;
+    width: 100%;
+    .nav-link {
+      color: #f4c844;
     }
-
+  }
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 9fdff3185fd309abd3014fbb26df229095ad5771
 //Footer All Pages
 footer {
   background-color: #0e133e;
@@ -39,12 +31,11 @@ footer {
   .border {
     border-top:2rem !important;
     border-color:#5d6578;
-<<<<<<< HEAD
+
     h3 {
       font-size: 0.8rem;
     }
-=======
->>>>>>> 9fdff3185fd309abd3014fbb26df229095ad5771
+
   }
 }
 
@@ -53,12 +44,12 @@ footer {
 .hero {
   background-image: url('../images/pizzaplanet.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   height:250px;
 }
 
-.mainlogo{
+.mainlogo {
   width:10%;
 }
 
@@ -66,20 +57,29 @@ footer {
   border-radius: 0;
   margin-bottom:1rem;
 }
+.nav-link {
+  font-weight: bold;
+  color: #f4c844;
+  font-family: 'roboto';
+}
 
-.btn{
+.btn {
   color: #f4c844;
   background-color: #e3001b;
   border-color: #f4c844;
+  font-family: 'roboto';
+  padding: 1rem 2rem;
+  font-size:1.2rem;
+  border-width: medium;
 }
 .story {
   background-color:#cacaca;
 }
 
-h1{
+h1 {
   color: #e3001b;
 }
-h2{
+h2 {
   text-align: center;
 }
 
@@ -89,11 +89,10 @@ h2{
 
 .maintext {
   margin-top: 3rem;
-  }
+}
 
 
 //Menu
-<<<<<<< HEAD
 .menu-main {
   background-image: url('images/pizzaplanet.jpg');
   background-repeat: no-repeat;
@@ -130,50 +129,50 @@ ul {
 .menu-p {
   margin: 5%;
   padding-bottom: 5%;
-  }
-    p {
-      padding-top: 10px;
-      text-align: center;
-      font-family: 'Roboto', sans-serif;
-      }
+}
+p {
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+.menu-list li {
+  letter-spacing: 5px;
+  font-family: 'Planet N', sans-serif;
+  padding: 2%;
+  margin-top: 1%;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.bluebox {
+  width: 75%;
+  margin: 0 auto !important;
+  border-radius: 0.5rem;
+  background-color: rgba(55,122,229,.75);
+  padding: 10px 2.5%;
+  margin: 10px;
+  color: white;
+  border-width: 20%;
+  border-style: solid;
+  border-color: rgb(217, 66, 48);
+}
+.menu-h3 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  .menu-list {
+    text-align: center;
+    list-style-type: none;
     .menu-list li {
       letter-spacing: 5px;
       font-family: 'Planet N', sans-serif;
       padding: 2%;
-      margin-top: 1%;
-      font-size: 0.8rem;
+      margin-top: 2%;
+      font-size: 0.6rem;
       text-align: center;
     }
   }
-  .bluebox {
-    width: 75%;
-    margin: 0 auto !important;
-    border-radius: 0.5rem;
-    background-color: rgba(55,122,229,.75);
-    padding: 10px 2.5%;
-    margin: 10px;
-    color: white;
-    border-width: 20%;
-    border-style: solid;
-    border-color: rgb(217, 66, 48);
-  }
-    .menu-h3 {
-      font-family: 'Roboto', sans-serif;
-      letter-spacing: 0.5px;
-      .menu-list {
-        text-align: center;
-        list-style-type: none;
-          .menu-list li {
-            letter-spacing: 5px;
-            font-family: 'Planet N', sans-serif;
-            padding: 2%;
-            margin-top: 2%;
-            font-size: 0.6rem;
-            text-align: center;
-          }
-      }
-    }
 }
+
 ul {
   .pizza,
   .salads,
@@ -184,7 +183,7 @@ ul {
     font-size: 0.8rem;
   }
 }
-}
+
 .meal {
   width: 40%;
 }
@@ -203,9 +202,6 @@ ul {
 .underline {
   border-bottom: 2px solid #d94230;
 }
-=======
-
->>>>>>> 9fdff3185fd309abd3014fbb26df229095ad5771
 
 //About Us
 .about-main {
@@ -232,19 +228,20 @@ ul {
     margin: 0 auto;
     p {
       padding-top: 10px;
-      }
+    }
     .hours {
       list-style-type: none;
       padding: 0 15px 15px 15px;
     }
   }
-  .greybox {
-    border-radius: 0.5rem;
-    background-color: rgba(105,105,105,.85);
-    padding: 10px 2.5%;
-    margin-bottom: 10px;
-    color: white;
-  }
+}
+.greybox {
+  border-radius: 0.5rem;
+  background-color: rgba(105,105,105,.85);
+  padding: 10px 2.5%;
+  margin-bottom: 10px;
+  color: white;
+}
 
 .about-pics {
   text-align: center;
@@ -263,7 +260,7 @@ ul {
   .about-image {
     height: 225px !important;
   }
-<<<<<<< HEAD
+
   .menu-h3 {
     font-size: 1.3rem;
   }
@@ -276,8 +273,7 @@ ul {
   .menu-list li {
     font-size: 1rem;
   }
-=======
->>>>>>> 9fdff3185fd309abd3014fbb26df229095ad5771
+
 }
 
 @media (min-width: 992px) {
@@ -285,7 +281,7 @@ ul {
     margin-top: 20px;
     margin-bottom: 20px !important;
   }
-<<<<<<< HEAD
+
   .menu-p p {
     font-size: 1.2rem;
   }
@@ -301,24 +297,23 @@ ul {
     .desserts {
       font-size: 1rem;
     }
-=======
->>>>>>> 9fdff3185fd309abd3014fbb26df229095ad5771
+  }
 }
 
 @media (min-width: 1050px) {
   .about-image {
     height: 250px !important;
   }
-<<<<<<< HEAD
+
   .menu-list li {
     font-size: 1.2rem;
   }
   .menu-h3 {
     font-size: 1.5rem;
   }
-=======
->>>>>>> 9fdff3185fd309abd3014fbb26df229095ad5771
+
 }
+
 
 
 //Directions
