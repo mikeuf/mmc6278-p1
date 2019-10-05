@@ -8,10 +8,10 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.navbar #nav-logo {
+#nav-logo {
   width: 100px;
 }
-.navbar .nav {
+.nav {
   background-color: #e3001b;
   border-radius: 0.5rem;
   margin-bottom: 1.2%;
@@ -21,9 +21,13 @@
   transition: height 0.5s;
   height: 0px;
 }
-.navbar .nav .nav-link {
+.nav .nav-link {
   color: #f4c844;
   font-family: 'roboto';
+}
+.nav .nav-link:hover {
+  font-weight: bold;
+  color: #f4c844;
 }
 .show-mobile-menu {
   height: 120px;
@@ -65,10 +69,6 @@ footer .border h3 {
 .jumbotron {
   border-radius: 0;
   margin-bottom: 1rem;
-}
-.nav-link:hoover {
-  font-weight: bold;
-  color: #f4c844;
 }
 .btn {
   color: #f4c844;
