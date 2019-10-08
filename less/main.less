@@ -3,15 +3,48 @@
 //Fonts
 @font-face {
   font-family: 'Planet N';
-  src: ufl('../fonts/planetn.ttf')
+  src: url('../fonts/planetn.ttf');
 }
 
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 300;
+	src: local('Roboto Light'), local('Roboto-Light'), url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: regular;
+	font-weight: 400;
+	src: local('Roboto Regular'), local('Roboto-Regular'), url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: medium;
+	font-weight: 500;
+	src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: bold;
+	font-weight: 700;
+	src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
 
 // Reset rule
 * {
 margin: 0;
 padding: 0;
 border: 0;
+}
+
+//Body
+body, ul li, a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 
 //Header All Pages
@@ -32,7 +65,7 @@ border: 0;
   height: 0px;
   .nav-link {
     color: #f4c844;
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
   }
   .nav-link:hover {
     font-weight:bold;
@@ -68,7 +101,7 @@ footer {
 
 h3 {
   font-size: 0.8rem;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -94,7 +127,7 @@ h3 {
   color: #f4c844;
   background-color: #e3001b;
   border-color: #f4c844;
-  font-family: 'roboto';
+  font-family: 'Roboto', sans-serif;
   padding: 1rem 2rem;
   font-size:1.2rem;
   border-width: medium;
@@ -125,7 +158,7 @@ h1 {
 }
 h2 {
   text-align: center;
-  font-family: 'roboto';
+  font-family: 'Roboto', sans-serif;
   font-size:1.5rem;
   font-weight: bold;
 }
@@ -133,14 +166,14 @@ h2 {
 
 .col-12 {
   padding-bottom: 1.5%;
-  font-family: 'roboto';
+  font-family: 'Roboto', sans-serif;
   font-size:1.2rem;
 }
 
 .maintext {
   margin-top: 3rem;
   text-align:center;
-  font-family: 'roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
   word-break: break-all;
 }
@@ -328,6 +361,7 @@ padding: 5% 5% 0 5%;
  }
 
 .directions-h2 {
+  font-family: 'Roboto', sans-serif;
   font-size: 3rem;
   color: #ffffff;
   text-align: left;
