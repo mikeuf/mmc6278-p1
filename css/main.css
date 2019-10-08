@@ -1,19 +1,39 @@
-<<<<<<< HEAD
 @font-face {
   font-family: 'Planet N';
   src: ufl('../fonts/planetn.ttf');
-=======
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: regular;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: medium;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: bold;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
 * {
   margin: 0;
   padding: 0;
   border: 0;
->>>>>>> origin/dev
 }
 .navbar {
   padding: 0px !important;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 #nav-logo {
   width: 100px;
@@ -24,7 +44,6 @@
   margin-bottom: 1.2%;
   width: 85%;
   overflow: hidden;
-  -webkit-transition: height 0.5s;
   transition: height 0.5s;
   height: 0px;
 }
@@ -38,7 +57,6 @@
 }
 .show-mobile-menu {
   height: 120px;
-  -webkit-transition: height 0.5s;
   transition: height 0.5s;
 }
 #hamburger {
@@ -217,13 +235,9 @@ ul .desserts {
   margin: 3%;
 }
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 2%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .underline {
   border-bottom: 2px solid #d94230;
@@ -271,12 +285,6 @@ ul .desserts {
   height: 175px;
   margin-bottom: 10px;
 }
-<<<<<<< HEAD
-@media (min-width: 600px) {
-  .menu-list li {
-    font-size: 0.9rem;
-  }
-=======
 .directions-main {
   background-image: url('../images/directions-background-2019-09-29a.png');
   background-repeat: no-repeat;
@@ -301,7 +309,11 @@ ul .desserts {
 .directions-body {
   font-size: 1.5rem;
   color: #ffffff;
->>>>>>> origin/dev
+}
+@media (min-width: 600px) {
+  .menu-list li {
+    font-size: 0.9rem;
+  }
 }
 @media (min-width: 768px) {
   .about-image {
