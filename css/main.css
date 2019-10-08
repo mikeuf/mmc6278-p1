@@ -39,7 +39,9 @@ a {
 }
 .navbar {
   padding: 0px !important;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #nav-logo {
   width: 100px;
@@ -50,10 +52,15 @@ a {
   margin-bottom: 1.2%;
   width: 85%;
   overflow: hidden;
+  -webkit-transition: height 0.4s;
   transition: height 0.4s;
   height: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly !important;
+  -webkit-box-pack: space-evenly !important;
+      -ms-flex-pack: space-evenly !important;
+          justify-content: space-evenly !important;
 }
 .nav .nav-link {
   color: #f4c844;
@@ -66,6 +73,7 @@ a {
 }
 .show-mobile-menu {
   height: 120px;
+  -webkit-transition: height 0.5s;
   transition: height 0.5s;
 }
 #hamburger {
@@ -244,9 +252,13 @@ ul .desserts {
   margin: 3%;
 }
 .container-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 2%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .underline {
   border-bottom: 2px solid #d94230;
@@ -270,6 +282,8 @@ ul .desserts {
   background-color: rgba(105, 105, 105, 0.85);
   color: white;
   text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -398,7 +412,9 @@ ul .desserts {
     display: none;
   }
   .navbar {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (min-width: 992px) {
