@@ -17,8 +17,8 @@
   margin-bottom: 1.2%;
   width: 85%;
   overflow: hidden;
-  -webkit-transition: height 0.5s;
-  transition: height 0.5s;
+  -webkit-transition: height 0.4s;
+  transition: height 0.4s;
   height: 0px;
 }
 .nav .nav-link {
@@ -295,6 +295,11 @@ ul .desserts {
   }
   #hamburger {
     display: none;
+  }
+  .navbar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (min-width: 992px) {
