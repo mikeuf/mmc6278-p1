@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Planet N';
-  src: ufl('../fonts/planetn.ttf');
+  src: url('../fonts/planetn.ttf');
 }
 @font-face {
   font-family: "Roboto";
