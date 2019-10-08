@@ -333,6 +333,24 @@ ul .desserts {
   font-weight: 400;
   text-align: left;
 }
+.order-now-main {
+  background-image: url('../images/order-now-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.order-now-row {
+  padding: 3%;
+}
+.order-now-col {
+  padding: 3% 4rem 3% 4rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0.5rem;
+}
+.order-now-button h2 {
+  color: #666666;
+  text-align: center;
+}
 @media (min-width: 600px) {
   .menu-list li {
     font-size: 0.9rem;
