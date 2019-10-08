@@ -1,30 +1,30 @@
 @font-face {
   font-family: 'Planet N';
-  src: url('../fonts/planet_n/planetn.ttf');
+  src: url('../fonts/planetn.ttf');
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url('../fonts/roboto/Roboto-Light.ttf') format('truetype');
+  src: local('Roboto Light'), local('Roboto-Light'), url('../fonts/Roboto-Light.ttf') format('truetype');
 }
 @font-face {
   font-family: "Roboto";
   font-style: regular;
   font-weight: 400;
-  src: local('Roboto Regular'), local('Roboto-Regular'), url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  src: local('Roboto Regular'), local('Roboto-Regular'), url('../fonts/Roboto-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: "Roboto";
   font-style: medium;
   font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/roboto/Roboto-Medium.ttf') format('truetype');
+  src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Roboto-Medium.ttf') format('truetype');
 }
 @font-face {
   font-family: "Roboto";
   font-style: bold;
   font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/roboto/Roboto-Bold.ttf') format('truetype');
+  src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/Roboto-Bold.ttf') format('truetype');
 }
 * {
   margin: 0;
@@ -39,7 +39,9 @@ a {
 }
 .navbar {
   padding: 0px !important;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #nav-logo {
   width: 100px;
@@ -50,6 +52,7 @@ a {
   margin-bottom: 1.2%;
   width: 85%;
   overflow: hidden;
+  -webkit-transition: height 0.4s;
   transition: height 0.4s;
   height: 0px;
 }
@@ -63,6 +66,7 @@ a {
 }
 .show-mobile-menu {
   height: 120px;
+  -webkit-transition: height 0.5s;
   transition: height 0.5s;
 }
 #hamburger {
@@ -240,10 +244,14 @@ ul .desserts {
   width: 50%;
   margin: 3%;
 }
-.container {
+.container-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 2%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .underline {
   border-bottom: 2px solid #d94230;
@@ -267,6 +275,8 @@ ul .desserts {
   background-color: rgba(105, 105, 105, 0.85);
   color: white;
   text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -348,7 +358,9 @@ ul .desserts {
     display: none;
   }
   .navbar {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (min-width: 992px) {
