@@ -1,13 +1,11 @@
-<<<<<<< HEAD
 @font-face {
   font-family: 'Planet N';
   src: ufl('../fonts/planetn.ttf');
-=======
+}
 * {
   margin: 0;
   padding: 0;
   border: 0;
->>>>>>> origin/dev
 }
 .navbar {
   padding: 0px !important;
@@ -247,6 +245,8 @@ ul .desserts {
   background-color: rgba(105, 105, 105, 0.85);
   color: white;
   text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -271,12 +271,6 @@ ul .desserts {
   height: 175px;
   margin-bottom: 10px;
 }
-<<<<<<< HEAD
-@media (min-width: 600px) {
-  .menu-list li {
-    font-size: 0.9rem;
-  }
-=======
 .directions-main {
   background-image: url('../images/directions-background-2019-09-29a.png');
   background-repeat: no-repeat;
@@ -301,7 +295,11 @@ ul .desserts {
 .directions-body {
   font-size: 1.5rem;
   color: #ffffff;
->>>>>>> origin/dev
+}
+@media (min-width: 600px) {
+  .menu-list li {
+    font-size: 0.9rem;
+  }
 }
 @media (min-width: 768px) {
   .about-image {
