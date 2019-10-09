@@ -161,7 +161,7 @@ h2 {
   word-break: break-all;
 }
 .menu-main {
-  background-image: url('images/pizzaplanet.jpg');
+  background-image: url('../images/pizzaplanet.jpg') !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -181,6 +181,10 @@ ul .desserts li {
   font-size: 0.65rem;
   text-align: center;
   letter-spacing: normal;
+}
+li .small {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 0.65rem;
 }
 .menu-h2 {
   padding-top: 25px;
@@ -232,14 +236,17 @@ p {
   margin-top: 2%;
   font-size: 0.6rem;
   text-align: center;
+  list-style-type: none;
 }
 ul .pizza,
 ul .salads,
 ul .snacks,
 ul .beverages,
 ul .kids,
-ul .desserts {
+ul .desserts,
+.underline {
   font-size: 0.8rem;
+  list-style-type: none;
 }
 .meal {
   width: 40%;
@@ -250,6 +257,10 @@ ul .desserts {
 .family-meal {
   width: 50%;
   margin: 3%;
+}
+.meal, .alien, .family-meal {
+  display: block;
+  margin: auto;
 }
 .container-menu {
   display: -webkit-box;
@@ -403,6 +414,13 @@ ul .desserts {
   .menu-list li {
     font-size: 1rem;
   }
+  .menu-food {
+    display: flex;
+  }
+  .alien {
+    width: 100%;
+  }
+
 }
 @media (min-width: 890px) {
   .nav {
