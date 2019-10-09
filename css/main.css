@@ -66,6 +66,7 @@ a {
   color: #f4c844;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
+  font-size: 0.8rem;
 }
 .nav .nav-link:hover {
   font-weight: bold;
