@@ -161,7 +161,7 @@ h2 {
   word-break: break-all;
 }
 .menu-main {
-  background-image: url('../images/pizzaplanet.jpg') !important;
+  background-image: url('../images/pizzaplanet.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -175,7 +175,8 @@ ul .salads li,
 ul .snacks li,
 ul .beverages li,
 ul .kids li,
-ul .desserts li {
+ul .desserts li,
+ul .underline {
   list-style-type: none;
   font-family: 'Roboto', sans-serif;
   font-size: 0.65rem;
@@ -205,7 +206,7 @@ p {
   font-size: 0.8rem;
   text-align: center;
 }
-div.bluebox {
+.bluebox {
   width: 75%;
   margin: 0 auto !important;
   border-radius: 0.5rem;
@@ -232,17 +233,14 @@ div.bluebox {
   margin-top: 2%;
   font-size: 0.6rem;
   text-align: center;
-  list-style-type: none;
 }
 ul .pizza,
 ul .salads,
 ul .snacks,
 ul .beverages,
 ul .kids,
-ul .desserts,
-.underline {
+ul .desserts {
   font-size: 0.8rem;
-  list-style-type: none;
 }
 .meal {
   width: 40%;
@@ -254,7 +252,9 @@ ul .desserts,
   width: 50%;
   margin: 3%;
 }
-.meal, .alien, .family-meal {
+.meal,
+.alien,
+.family-meal {
   display: block;
   margin: auto;
 }
@@ -416,12 +416,13 @@ ul .desserts,
     font-size: 1rem;
   }
   .menu-food {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .alien {
     width: 100%;
   }
-
 }
 @media (min-width: 890px) {
   .nav {
