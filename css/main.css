@@ -173,7 +173,7 @@ h2 {
 ul .pizza li,
 ul .salads li,
 ul .snacks li,
-ul .bevarages li,
+ul .beverages li,
 ul .kids li,
 ul .desserts li {
   list-style-type: none;
@@ -181,10 +181,6 @@ ul .desserts li {
   font-size: 0.65rem;
   text-align: center;
   letter-spacing: normal;
-}
-li .small {
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 0.65rem;
 }
 .menu-h2 {
   padding-top: 25px;
@@ -209,7 +205,7 @@ p {
   font-size: 0.8rem;
   text-align: center;
 }
-.bluebox {
+div.bluebox {
   width: 75%;
   margin: 0 auto !important;
   border-radius: 0.5rem;
@@ -273,6 +269,14 @@ ul .desserts,
 }
 .underline {
   border-bottom: 2px solid #d94230;
+}
+.menu-order-button {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 500px;
+  height: 50vh;
+  max-height: 800px;
+  border-radius: 2rem;
 }
 .about-main {
   background-image: url('../images/missioncontrol.png');
