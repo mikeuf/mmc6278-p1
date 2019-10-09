@@ -170,6 +170,7 @@ h2 {
 .menu-logo {
   width: 50%;
   margin: 5% 7% !important;
+  justify-content: center;
 }
 ul .pizza li,
 ul .salads li,
@@ -218,9 +219,10 @@ div.bluebox {
   border-style: solid;
   border-color: #d94230;
 }
-.menu-h3 {
+h3.menu-h3 {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.5px;
+  text-align: center;
 }
 .menu-h3 .menu-list {
   text-align: center;
@@ -398,6 +400,14 @@ ul .desserts,
   .menu-list li {
     font-size: 0.9rem;
   }
+  ul .pizza li,
+  ul .salads li,
+  ul .snacks li,
+  ul .beverages li,
+  ul .kids li,
+  ul .desserts li {
+    font-size: 0.8rem;
+  }
 }
 @media (min-width: 768px) {
   .about-image {
@@ -436,6 +446,14 @@ ul .desserts,
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  ul .pizza li,
+  ul .salads li,
+  ul .snacks li,
+  ul .beverages li,
+  ul .kids li,
+  ul .desserts li {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 992px) {
   .about-image {
@@ -447,14 +465,6 @@ ul .desserts,
   }
   footer h3 {
     font-size: 0.9rem;
-  }
-  ul .pizza,
-  ul .salads,
-  ul .snacks,
-  ul .beverages,
-  ul .kids,
-  ul .desserts {
-    font-size: 1rem;
   }
 }
 @media (min-width: 1050px) {
