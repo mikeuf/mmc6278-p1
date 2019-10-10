@@ -12,57 +12,67 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- Roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/main.css">
-    <title>Pizza Planet - Directions</title>
+
+    <title>Pizza Planet Directions</title>
+
   </head>
+
   <body class="container-fluid">
-    <nav class="navbar navbar-expand-sm">
-      <a class="navbar-brand" href="index.html">
-        <img id="nav-logo" src="images/logo.jpeg" alt="Pizza Planet Logo">
-      </a>
-      <ul class="nav nav-pills navbar">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="menu.html">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="directions.html">Directions</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ordernow.html">Order Now</a>
-        </li>
-      </ul>
-    </nav>
-<main class="directions-main">
-  <div class="directions-row d-flex flex-row align-items-stretch flex-wrap">
-    <div class="directions-col-left col-12 col-lg-6">
-      <div class="directions-body">
-        <h2>Directions</h2>
-        <ul>
-        <li>From I-4, take Exit 64 toward the Magic Kingdom and Hollywood Studios.</li>
-        <li>Merge on to Disney’s Hollywood Studios Access Rd</li>
-        <li>Stay straight to go on to Studio Dr.</li>
-      </ul>
-      <br />
-      <h2>Address</h2>
-      <p>
-      Disney's Holywood Studios</br >
-      351 South Studio Drive<br />
-      Orlando, Florida
-      </p>
-    </div>
-    </div> <!-- end col left -->
-    <div class="directions-col-right col-12 col-lg-6">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.043667332282!2d-81.5604600839901!3d28.357529382527073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd7c2763821e47%3A0xbbffcea336e3f10f!2sDisney&#39;s%20Hollywood%20Studios!5e0!3m2!1sen!2sus!4v1570519142380!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </div>
-  </div>
-  
-</main>
+    <header>
+      <nav class="navbar">
+        <a class="navbar-brand" href="#">
+          <img id="nav-logo" src="images/logo.jpeg" alt="Pizza Planet Logo">
+        </a>
+        <button id="hamburger">&#9776;</button>
+        <ul class="navbar nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="directions.html">Directions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ordernow.html">Order Now</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="directions-main">
+      <div class="directions-row d-flex flex-row justify-content-between flex-wrap">
+        <div class="directions-col-left col-12 col-lg-6">
+          <div class="directions-body">
+            <h2>Directions</h2>
+            <ul>
+            <li>From I-4, take Exit 64 toward the Magic Kingdom and Hollywood Studios.</li>
+            <li>Merge on to Disney’s Hollywood Studios Access Rd</li>
+            <li>Stay straight to go on to Studio Dr.</li>
+          </ul>
+          <br />
+          <h2>Address</h2>
+          <p>
+          Disney's Holywood Studios</br >
+          351 South Studio Drive<br />
+          Orlando, Florida
+          </p>
+        </div>
+        </div> <!-- end col left -->
+        <div class="directions-col-right col-12 col-lg-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.043667332282!2d-81.5604600839901!3d28.357529382527073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd7c2763821e47%3A0xbbffcea336e3f10f!2sDisney&#39;s%20Hollywood%20Studios!5e0!3m2!1sen!2sus!4v1570519142380!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+
+    </main>
 
     <footer class="border">
       <div class="text-center foot">
@@ -74,5 +84,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
   </body>
 </html>
