@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Planet N';
-  src: url('../fonts/planetn.ttf');
+  src: url('../fonts/planet_n/planetn.ttf');
 }
 @font-face {
   font-family: "Roboto";
@@ -168,7 +168,7 @@ h2 {
   background-position: center;
 }
 .menu-logo {
-  width: 50%;
+  width: 30%;
   margin: 5% 7% !important;
   justify-content: center;
 }
@@ -208,11 +208,11 @@ p {
   text-align: center;
 }
 div.bluebox {
-  width: 75%;
+  width: 100%;
   margin: 0 auto !important;
   border-radius: 0.5rem;
   background-color: rgba(55, 122, 229, 0.75);
-  padding: 10px 2.5%;
+  padding-bottom: 2%;
   margin: 10px;
   color: white;
   border-width: 20%;
@@ -255,7 +255,6 @@ ul .desserts,
 }
 .family-meal {
   width: 50%;
-  margin: 3%;
 }
 .meal, .alien, .family-meal {
   display: block;
@@ -429,8 +428,18 @@ ul .desserts,
   .menu-food {
     display: flex;
   }
+  .menu-food figure {
+    width: 33.33333%;
+  }
   .alien {
+    width: 80%;
+  }
+  .meal {
+    width: 70%;
+  }
+  .family-meal {
     width: 100%;
+    padding-left: 3%;
   }
 
 }
@@ -452,7 +461,7 @@ ul .desserts,
   ul .beverages li,
   ul .kids li,
   ul .desserts li {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 992px) {
