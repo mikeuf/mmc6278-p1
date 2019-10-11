@@ -359,7 +359,10 @@ ul .desserts li {
   padding: 3%;
 }
 .order-now-col {
-  padding: 3% 4rem 3% 4rem;
+  padding: 25px 1%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .order-now-button {
   margin: 0 auto;
@@ -374,15 +377,14 @@ ul .desserts li {
   background-color: rgba(255, 255, 255, 0.9);
 }
 .order-now-button img {
-  margin: 3rem 2rem 2rem 2rem;
-  z-index: -1;
+  padding: 20px 3% 0px;
   max-height: 250px;
 }
 .order-now-button h2 {
   color: #666666;
-  font-size: 5rem;
-  font-weight: 300;
-  padding-bottom: 2rem;
+  font-family: 'Planet N', sans-serif;
+  font-size: 2rem;
+  padding-top: 20px;
 }
 @media (min-width: 600px) {
   ul .pizza li,
@@ -401,6 +403,9 @@ ul .desserts li {
   }
   h3.menu-h3 {
     font-size: 1.25rem;
+  }
+  .order-now-button h2 {
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 700px) {
