@@ -20,6 +20,8 @@ padding: 0;
 border: 0;
 }
 
+
+
 //Body
 body, ul li, a {
   font-family: 'Roboto', sans-serif;
@@ -29,6 +31,7 @@ body, ul li, a {
 .container-fluid {
   font-size: 18px;
 }
+
 
 
 //Header All Pages
@@ -75,6 +78,8 @@ body, ul li, a {
   border: 1px solid transparent;
 }
 
+
+
 //Footer All Pages
 footer {
   background-color: @blue-secondary;
@@ -89,6 +94,7 @@ footer {
 h3 {
   font-size: 0.8rem;
 }
+
 
 
 //Home Page
@@ -130,9 +136,12 @@ h3 {
   border-radius: 0;
   margin:2%;
 }
-article p {
+
+.home-p {
   padding-top:0px;
+  color: @black-secondary;
 }
+
 .story {
   background-color:@home-bg;
 }
@@ -147,6 +156,7 @@ h1 {
   text-align: center;
   font-size:1.5rem;
   font-family: 'Planet N', sans-serif;
+  color: @orange-secondary;
 }
 
 .col-12 {
@@ -160,6 +170,7 @@ h1 {
   font-size: 1em;
   word-break: break-all;
 }
+
 
 
 //Menu
@@ -237,7 +248,8 @@ h3.menu-h3 {
 }
 
 .underline {
-  border-bottom: 2px solid #d94230;
+  color: @green-secondary;
+  border-bottom: 2px solid @red-primary;
   letter-spacing: 1px;
   font-family: 'Planet N', sans-serif;
   padding: 0px 1%;
@@ -287,6 +299,12 @@ ul {
   border-radius: 2rem;
 }
 
+.menu-tagline {
+  color: @green-secondary;
+}
+
+
+
 //About Us
 .about-main {
   background-image: url('../images/missioncontrol.png');
@@ -317,6 +335,7 @@ ul {
     p {
       padding-top: 10px;
       font-family: 'Planet N', sans-serif;
+      color: @green-primary;
     }
     .hours {
       list-style-type: none;
@@ -339,6 +358,12 @@ ul {
     margin-bottom: 10px;
   }
 }
+
+.about-email {
+  color: @orange-secondary;
+}
+
+
 
 //Directions
 .directions-main {
@@ -381,27 +406,28 @@ text-align: center;
   text-align: left;
 }
 
-
-.directions-body ul li {
-margin-bottom: 1rem;
-}
-
 .directions-body h2 {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: left;
   font-family: 'Planet N', sans-serif;
+  color: @green-secondary;
+}
+
+.directions-body ul li {
+margin-bottom: 1rem;
 }
 
 
-//Order Now
 
+//Order Now
 .order-now-main {
   background-color: rgba(0, 0, 0, 0.1);
   background-image: url('../images/order-now-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-bottom: 80px;
 }
 
 .order-now-row {
@@ -435,16 +461,16 @@ background-color: rgba(255, 255, 255, 0.9);
 }
 
 .order-now-button h2 {
-  color: #666666;
+  color: @purple-primary;
   font-family: 'Planet N', sans-serif;
   font-size: 2rem;
   padding-top: 20px;
 }
 
+
+
 //Media Queries
-
 @media (min-width: 600px) {
-
   ul .pizza li,
   ul .salads li,
   ul .snacks li,
@@ -481,31 +507,40 @@ background-color: rgba(255, 255, 255, 0.9);
   .about-image {
     height: 225px !important;
   }
+
   h3.menu-h3 {
     font-size: 1.5rem;
   }
+
   .menu-p p, .menu-list {
     font-size: 1.1rem;
   }
+
   .menu-h2 {
     font-size: 2rem;
   }
+
   .underline {
     font-size: 1.2rem;
-}
+  }
+
   .menu-food {
     align-items: center;
   }
+
   .alien {
     width: 100%;
   }
+
   .meal {
     width: 100%;
   }
+
   .family-meal {
     width: 100%;
     padding-left: 3%;
   }
+
   ul .pizza li,
   ul .salads li,
   ul .snacks li,
@@ -547,9 +582,11 @@ background-color: rgba(255, 255, 255, 0.9);
   .menu-p p {
     font-size: 1.2rem;
   }
+
   footer h3 {
     font-size: 0.9rem;
   }
+
   ul {
     .pizza,
     .salads,
@@ -570,8 +607,8 @@ background-color: rgba(255, 255, 255, 0.9);
   .underline {
     font-size: 1.3rem;
   }
+
   h3.menu-h3 {
     font-size: 1.5rem !important;
   }
-
 }
