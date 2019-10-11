@@ -1,9 +1,7 @@
 @font-face {
   font-family: 'Planet N';
-  src: url('../fonts/planet_n/planetn.ttf');
-}
-@font-face {
-  font-family: "Roboto";
+  src: url('../fonts/planet_n/planet_n-webfont.ttf') format('truetype'), url('../fonts/planet_n/planetn-webfont.woff2') format('woff2'), url('../fonts/planet_n/planetn-webfont.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 /* Google Fonts
@@ -25,21 +23,28 @@ a {
 }
 .navbar {
   padding: 0px !important;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #nav-logo {
   width: 100px;
 }
 .nav {
-  background-color: #e3001b;
+  background-color: #d94230;
   border-radius: 0.5rem;
   margin-bottom: 1.2%;
   width: 85%;
   overflow: hidden;
+  -webkit-transition: height 0.4s;
   transition: height 0.4s;
   height: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly !important;
+  -webkit-box-pack: space-evenly !important;
+      -ms-flex-pack: space-evenly !important;
+          justify-content: space-evenly !important;
 }
 .nav .nav-link {
   color: #f4c844;
@@ -48,14 +53,16 @@ a {
 .nav .nav-link:hover {
   font-weight: bold;
   color: #f4c844;
+  text-decoration: underline;
 }
 .show-mobile-menu {
   height: 120px;
+  -webkit-transition: height 0.5s;
   transition: height 0.5s;
 }
 #hamburger {
   display: block;
-  color: #e3001b;
+  color: #d94230;
   background-color: white;
   margin: auto;
   font-size: 35px;
@@ -90,37 +97,40 @@ h3 {
 }
 .btn {
   color: #f4c844;
-  background-color: #e3001b;
+  background-color: #d94230;
   border-color: #f4c844;
   padding: 1rem 2rem;
   font-size: 1.2rem;
   border-width: medium;
 }
 .btn:hover {
-  color: #e3001b !important;
+  color: #d94230 !important;
   background-color: #f4c844;
-  border-color: #e3001b;
+  border-color: #d94230;
 }
 .img-thumbnail {
   padding: 0;
   border: 0;
   border-radius: 0;
+  margin: 2%;
 }
-article p {
+.home-p {
   padding-top: 0px;
+  color: #060606;
 }
 .story {
   background-color: #cacaca;
 }
 h1 {
-  color: #e3001b;
+  color: #d94230;
   font-family: 'Planet N', sans-serif;
   font-size: 1.8rem;
 }
-h2 {
+.home-h2 {
   text-align: center;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-family: 'Planet N', sans-serif;
+  color: #ee7035;
 }
 .col-12 {
   padding-bottom: 1.5%;
@@ -128,7 +138,7 @@ h2 {
 }
 .maintext {
   margin-top: 3rem;
-  text-align: center;
+  text-align: left;
   font-size: 1em;
   word-break: break-all;
 }
@@ -139,9 +149,11 @@ h2 {
   background-position: center;
 }
 .menu-logo {
-  width: 30%;
-  margin: 5% 7% !important;
-  justify-content: center;
+  width: 65%;
+  margin: 20px auto;
+  display: block;
+  padding-top: 25px;
+  max-width: 530px;
 }
 ul .pizza li,
 ul .salads li,
@@ -161,21 +173,12 @@ ul .desserts li {
   color: white;
   font-size: 1.75rem;
   font-family: 'Planet N', sans-serif;
-}
-.menu-p {
-  margin: 5%;
-  padding-bottom: 5%;
-}
-p {
-  padding-top: 10px;
   text-align: center;
 }
-.menu-list li {
-  letter-spacing: 5px;
-  font-family: 'Planet N', sans-serif;
-  padding: 2%;
-  margin-top: 1%;
-  font-size: 0.8rem;
+.menu-p {
+  margin: 20px;
+  padding-bottom: 5%;
+  padding-top: 10px;
   text-align: center;
 }
 div.bluebox {
@@ -194,13 +197,15 @@ h3.menu-h3 {
   letter-spacing: 0.5px;
   text-align: center;
   margin-top: 10px;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  padding: 5px 2%;
 }
 .menu-list {
   text-align: center;
   list-style-type: none;
 }
 .underline {
+  color: #afd365;
   border-bottom: 2px solid #d94230;
   letter-spacing: 1px;
   font-family: 'Planet N', sans-serif;
@@ -238,14 +243,21 @@ ul .desserts li {
   margin: auto;
 }
 .container-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 2%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .menu-order-button {
   margin: 0 auto;
   text-align: center;
   border-radius: 2rem;
+}
+.menu-tagline {
+  color: #afd365;
 }
 .about-main {
   background-image: url('../images/missioncontrol.png');
@@ -259,6 +271,7 @@ ul .desserts li {
   color: white;
   font-family: 'Planet N', sans-serif;
   font-size: 2rem;
+  text-align: center;
 }
 .about-p {
   padding: 10px 3%;
@@ -268,12 +281,16 @@ ul .desserts li {
   background-color: rgba(105, 105, 105, 0.85);
   color: white;
   text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  padding: 0 10px 0;
 }
 .about-p .greybox-small p {
   padding-top: 10px;
   font-family: 'Planet N', sans-serif;
+  color: #51a646;
 }
 .about-p .greybox-small .hours {
   list-style-type: none;
@@ -293,6 +310,9 @@ ul .desserts li {
   height: 175px;
   margin-bottom: 10px;
 }
+.about-email {
+  color: #ee7035;
+}
 .directions-main {
   background-image: url('../images/directions-background-2019-09-29a.png');
   background-repeat: no-repeat;
@@ -305,7 +325,7 @@ ul .desserts li {
   padding: 3% 1rem 3% 1rem;
 }
 .directions-col-left {
-  padding: 3% 4rem 3% 4rem;
+  padding: 12px 12%;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   text-align: left;
@@ -327,14 +347,15 @@ ul .desserts li {
   color: white;
   text-align: left;
 }
-.directions-body ul li {
-  margin-bottom: 1rem;
-}
 .directions-body h2 {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: left;
   font-family: 'Planet N', sans-serif;
+  color: #afd365;
+}
+.directions-body ul li {
+  margin-bottom: 1rem;
 }
 .order-now-main {
   background-color: rgba(0, 0, 0, 0.1);
@@ -342,6 +363,7 @@ ul .desserts li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-bottom: 80px;
 }
 .order-now-row {
   max-width: 1160px;
@@ -349,7 +371,10 @@ ul .desserts li {
   padding: 3%;
 }
 .order-now-col {
-  padding: 3% 4rem 3% 4rem;
+  padding: 25px 1%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .order-now-button {
   margin: 0 auto;
@@ -364,15 +389,14 @@ ul .desserts li {
   background-color: rgba(255, 255, 255, 0.9);
 }
 .order-now-button img {
-  margin: 3rem 2rem 2rem 2rem;
-  z-index: -1;
+  padding: 20px 3% 0px;
   max-height: 250px;
 }
 .order-now-button h2 {
-  color: #666666;
-  font-size: 5rem;
-  font-weight: 300;
-  padding-bottom: 2rem;
+  color: #5e4156;
+  font-family: 'Planet N', sans-serif;
+  font-size: 2rem;
+  padding-top: 20px;
 }
 @media (min-width: 600px) {
   ul .pizza li,
@@ -384,18 +408,29 @@ ul .desserts li {
     font-size: .9rem;
   }
   .underline {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .directions-body h2 {
     font-size: 2rem;
+  }
+  h3.menu-h3 {
+    font-size: 1.25rem;
+  }
+  .order-now-button h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 700px) {
+  .hero {
+    background-image: url('../images/pizzaplanet2.jpg');
   }
 }
 @media (min-width: 768px) {
   .about-image {
     height: 225px !important;
   }
-  .menu-h3 {
-    font-size: 1.3rem;
+  h3.menu-h3 {
+    font-size: 1.5rem;
   }
   .menu-p p,
   .menu-list {
@@ -405,19 +440,18 @@ ul .desserts li {
     font-size: 2rem;
   }
   .underline {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .menu-food {
-    display: flex;
-  }
-  .menu-food figure {
-    width: 33.33333%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .alien {
-    width: 80%;
+    width: 100%;
   }
   .meal {
-    width: 70%;
+    width: 100%;
   }
   .family-meal {
     width: 100%;
@@ -478,9 +512,9 @@ ul .desserts li {
     height: 250px !important;
   }
   .underline {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
-  .menu-h3 {
+  h3.menu-h3 {
     font-size: 1.5rem !important;
   }
 }
