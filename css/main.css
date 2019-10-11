@@ -147,19 +147,17 @@ h2 {
   background-position: center;
 }
 .menu-logo {
-  width: 30%;
-  margin: 5% 7% !important;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 65%;
+  margin: 5% auto;
+  display: block;
+  padding-top: 25px;
 }
 ul .pizza li,
 ul .salads li,
 ul .snacks li,
 ul .beverages li,
 ul .kids li,
-ul .desserts li,
-ul .underline {
+ul .desserts li {
   list-style-type: none;
   font-family: 'Roboto', sans-serif;
   font-size: 0.65rem;
