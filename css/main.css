@@ -53,6 +53,7 @@ a {
 .nav .nav-link:hover {
   font-weight: bold;
   color: #f4c844;
+  text-decoration: underline;
 }
 .show-mobile-menu {
   height: 120px;
@@ -421,15 +422,15 @@ ul .desserts li {
     font-size: 1.2rem;
   }
   .menu-food {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .alien {
-    width: 80%;
+    width: 100%;
   }
   .meal {
-    width: 70%;
+    width: 100%;
   }
   .family-meal {
     width: 100%;
