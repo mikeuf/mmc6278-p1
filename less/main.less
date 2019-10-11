@@ -143,10 +143,10 @@ h1 {
   font-size: 1.8rem;
 }
 
-h2 {
+.home-h2 {
   text-align: center;
   font-size:1.5rem;
-  font-weight: bold;
+  font-family: 'Planet N', sans-serif;
 }
 
 .col-12 {
@@ -156,7 +156,7 @@ h2 {
 
 .maintext {
   margin-top: 3rem;
-  text-align:center;
+  text-align: left;
   font-size: 1em;
   word-break: break-all;
 }
@@ -172,9 +172,10 @@ h2 {
 
 .menu-logo {
   width: 65%;
-  margin: 5% auto;
+  margin: 20px auto;
   display: block;
   padding-top: 25px;
+  max-width: 530px;
 }
 
 ul {
@@ -199,13 +200,12 @@ ul {
   color: white;
   font-size: 1.75rem;
   font-family: 'Planet N', sans-serif;
+  text-align: center;
 }
 
 .menu-p {
-  margin: 5%;
+  margin: 20px;
   padding-bottom: 5%;
-}
-p {
   padding-top: 10px;
   text-align: center;
 }
@@ -227,7 +227,8 @@ h3.menu-h3 {
   letter-spacing: 0.5px;
   text-align: center;
   margin-top: 10px;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  padding: 5px 2%;
 }
 
 .menu-list {
@@ -300,6 +301,7 @@ ul {
   color: white;
   font-family: 'Planet N', sans-serif;
   font-size: 2rem;
+  text-align: center;
 }
 
 .about-p {
@@ -311,6 +313,7 @@ ul {
     text-align: center;
     width: fit-content;
     margin: 0 auto;
+    padding: 0 10px 0;
     p {
       padding-top: 10px;
       font-family: 'Planet N', sans-serif;
@@ -354,7 +357,7 @@ padding: 3% 1rem 3% 1rem;
 
 
 .directions-col-left {
-  padding: 3% 4rem 3% 4rem;
+  padding: 12px 12%;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   text-align: left;
@@ -465,6 +468,10 @@ max-height: 250px;
   .directions-body h2 {
     font-size: 2rem;
   }
+
+  h3.menu-h3 {
+    font-size: 1.25rem;
+  }
 }
 
 @media (min-width: 700px) {
@@ -477,9 +484,8 @@ max-height: 250px;
   .about-image {
     height: 225px !important;
   }
-
-  .menu-h3 {
-    font-size: 1.3rem;
+  h3.menu-h3 {
+    font-size: 1.5rem;
   }
   .menu-p p, .menu-list {
     font-size: 1.1rem;
@@ -567,7 +573,7 @@ max-height: 250px;
   .underline {
     font-size: 1.3rem;
   }
-  .menu-h3 {
+  h3.menu-h3 {
     font-size: 1.5rem !important;
   }
 
