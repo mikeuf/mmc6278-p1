@@ -1,9 +1,7 @@
 @font-face {
   font-family: 'Planet N';
-  src: url('../fonts/planet_n/planetn.ttf');
-}
-@font-face {
-  font-family: "Roboto";
+  src: url('../fonts/planet_n/planet_n-webfont.ttf') format('truetype'), url('../fonts/planet_n/planetn-webfont.woff2') format('woff2'), url('../fonts/planet_n/planetn-webfont.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 /* Google Fonts
@@ -25,7 +23,9 @@ a {
 }
 .navbar {
   padding: 0px !important;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #nav-logo {
   width: 100px;
@@ -36,10 +36,15 @@ a {
   margin-bottom: 1.2%;
   width: 85%;
   overflow: hidden;
+  -webkit-transition: height 0.4s;
   transition: height 0.4s;
   height: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly !important;
+  -webkit-box-pack: space-evenly !important;
+      -ms-flex-pack: space-evenly !important;
+          justify-content: space-evenly !important;
 }
 .nav .nav-link {
   color: #f4c844;
@@ -51,6 +56,7 @@ a {
 }
 .show-mobile-menu {
   height: 120px;
+  -webkit-transition: height 0.5s;
   transition: height 0.5s;
 }
 #hamburger {
@@ -105,6 +111,7 @@ h3 {
   padding: 0;
   border: 0;
   border-radius: 0;
+  margin: 2%;
 }
 article p {
   padding-top: 0px;
@@ -141,14 +148,17 @@ h2 {
 .menu-logo {
   width: 30%;
   margin: 5% 7% !important;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 ul .pizza li,
 ul .salads li,
 ul .snacks li,
 ul .beverages li,
 ul .kids li,
-ul .desserts li {
+ul .desserts li,
+ul .underline {
   list-style-type: none;
   font-family: 'Roboto', sans-serif;
   font-size: 0.65rem;
@@ -168,14 +178,6 @@ ul .desserts li {
 }
 p {
   padding-top: 10px;
-  text-align: center;
-}
-.menu-list li {
-  letter-spacing: 5px;
-  font-family: 'Planet N', sans-serif;
-  padding: 2%;
-  margin-top: 1%;
-  font-size: 0.8rem;
   text-align: center;
 }
 div.bluebox {
@@ -238,9 +240,13 @@ ul .desserts li {
   margin: auto;
 }
 .container-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 2%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .menu-order-button {
   margin: 0 auto;
@@ -268,6 +274,8 @@ ul .desserts li {
   background-color: rgba(105, 105, 105, 0.85);
   color: white;
   text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -408,10 +416,9 @@ ul .desserts li {
     font-size: 1.2rem;
   }
   .menu-food {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-  }
-  .menu-food figure {
-    width: 33.33333%;
   }
   .alien {
     width: 80%;
