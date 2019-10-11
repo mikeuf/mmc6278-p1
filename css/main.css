@@ -398,6 +398,11 @@ ul .desserts li {
     font-size: 2rem;
   }
 }
+@media (min-width: 700px) {
+  .hero {
+    background-image: url('../images/pizzaplanet2.jpg');
+  }
+}
 @media (min-width: 768px) {
   .about-image {
     height: 225px !important;
