@@ -4,15 +4,23 @@
   font-weight: normal;
   font-style: normal;
 }
-/* Google Fonts
-      font-family: 'Roboto', sans-serif;
-    */
+.main-font {
+  font-family: 'Roboto', sans-serif;
+}
+.round-border {
+  border-radius: 0.5rem;
+  border-style: solid;
+}
 * {
   margin: 0;
   padding: 0;
   border: 0;
 }
-body,
+h1,
+h2 {
+  font-family: 'Planet N', sans-serif;
+}
+p,
 ul li,
 a {
   font-family: 'Roboto', sans-serif;
@@ -33,6 +41,7 @@ a {
 .nav {
   background-color: #d94230;
   border-radius: 0.5rem;
+  border-style: solid;
   margin-bottom: 1.2%;
   width: 85%;
   overflow: hidden;
@@ -123,13 +132,11 @@ h3 {
 }
 h1 {
   color: #d94230;
-  font-family: 'Planet N', sans-serif;
   font-size: 1.8rem;
 }
 .home-h2 {
   text-align: center;
   font-size: 1.5rem;
-  font-family: 'Planet N', sans-serif;
   color: #ee7035;
 }
 .col-12 {
@@ -172,7 +179,6 @@ ul .desserts li {
   padding-bottom: 10px;
   color: white;
   font-size: 1.75rem;
-  font-family: 'Planet N', sans-serif;
   text-align: center;
 }
 .menu-p {
@@ -185,12 +191,12 @@ div.bluebox {
   width: 100%;
   margin: 0 auto !important;
   border-radius: 0.5rem;
+  border-style: solid;
   background-color: rgba(55, 122, 229, 0.75);
   padding-bottom: 2%;
   margin: 10px;
   color: white;
   border-width: 20%;
-  border-style: solid;
   border-color: #d94230;
 }
 h3.menu-h3 {
@@ -208,7 +214,6 @@ h3.menu-h3 {
   color: #afd365;
   border-bottom: 2px solid #d94230;
   letter-spacing: 1px;
-  font-family: 'Planet N', sans-serif;
   padding: 0px 1%;
   margin-top: 4%;
   font-size: 1rem;
@@ -269,7 +274,6 @@ ul .desserts li {
   padding-top: 25px;
   padding-bottom: 10px;
   color: white;
-  font-family: 'Planet N', sans-serif;
   font-size: 2rem;
   text-align: center;
 }
@@ -351,7 +355,6 @@ ul .desserts li {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: left;
-  font-family: 'Planet N', sans-serif;
   color: #afd365;
 }
 .directions-body ul li {
@@ -383,7 +386,8 @@ ul .desserts li {
   height: 50vh;
   max-height: 500px;
   background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 2rem;
+  border-radius: 0.5rem;
+  border-style: solid;
 }
 .order-now-button:hover {
   background-color: rgba(255, 255, 255, 0.9);
@@ -394,7 +398,6 @@ ul .desserts li {
 }
 .order-now-button h2 {
   color: #5e4156;
-  font-family: 'Planet N', sans-serif;
   font-size: 2rem;
   padding-top: 20px;
 }
