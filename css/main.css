@@ -16,6 +16,12 @@
   padding: 0;
   border: 0;
 }
+#buttonsize .buttons {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-width: medium;
+  font-family: 'Roboto', sans-serif;
+}
 h1,
 h2 {
   font-family: 'Planet N', sans-serif;
@@ -31,9 +37,7 @@ a {
 }
 .navbar {
   padding: 0px !important;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 #nav-logo {
   width: 100px;
@@ -45,15 +49,10 @@ a {
   margin-bottom: 1.2%;
   width: 85%;
   overflow: hidden;
-  -webkit-transition: height 0.4s;
   transition: height 0.4s;
   height: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly !important;
-      -ms-flex-pack: space-evenly !important;
-          justify-content: space-evenly !important;
+  justify-content: space-evenly !important;
 }
 .nav .nav-link {
   color: #f4c844;
@@ -66,7 +65,6 @@ a {
 }
 .show-mobile-menu {
   height: 120px;
-  -webkit-transition: height 0.5s;
   transition: height 0.5s;
 }
 #hamburger {
@@ -111,6 +109,7 @@ h3 {
   padding: 1rem 2rem;
   font-size: 1.2rem;
   border-width: medium;
+  font-family: 'Roboto', sans-serif;
 }
 .btn:hover {
   color: #d94230 !important;
@@ -137,6 +136,7 @@ h1 {
 .home-h2 {
   text-align: center;
   font-size: 1.5rem;
+  font-family: 'Planet N', sans-serif;
   color: #ee7035;
 }
 .col-12 {
@@ -147,7 +147,7 @@ h1 {
   margin-top: 3rem;
   text-align: left;
   font-size: 1em;
-  word-break: break-all;
+  word-wrap: normal;
 }
 .menu-main {
   background-image: url('../images/pizzaplanet.jpg');
@@ -179,6 +179,7 @@ ul .desserts li {
   padding-bottom: 10px;
   color: white;
   font-size: 1.75rem;
+  font-family: 'Planet N', sans-serif;
   text-align: center;
 }
 .menu-p {
@@ -214,6 +215,7 @@ h3.menu-h3 {
   color: #afd365;
   border-bottom: 2px solid #d94230;
   letter-spacing: 1px;
+  font-family: 'Planet N', sans-serif;
   padding: 0px 1%;
   margin-top: 4%;
   font-size: 1rem;
@@ -248,13 +250,9 @@ ul .desserts li {
   margin: auto;
 }
 .container-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 2%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .menu-order-button {
   margin: 0 auto;
@@ -270,10 +268,15 @@ ul .desserts li {
   background-size: cover;
   background-position: center;
 }
+#about-main-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .about-h2 {
   padding-top: 25px;
   padding-bottom: 10px;
   color: white;
+  font-family: 'Planet N', sans-serif;
   font-size: 2rem;
   text-align: center;
 }
@@ -285,8 +288,6 @@ ul .desserts li {
   background-color: rgba(105, 105, 105, 0.85);
   color: white;
   text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   padding: 0 10px 0;
@@ -355,6 +356,7 @@ ul .desserts li {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: left;
+  font-family: 'Planet N', sans-serif;
   color: #afd365;
 }
 .directions-body ul li {
@@ -375,9 +377,7 @@ ul .desserts li {
 }
 .order-now-col {
   padding: 25px 1%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .order-now-button {
   margin: 0 auto;
@@ -398,6 +398,7 @@ ul .desserts li {
 }
 .order-now-button h2 {
   color: #5e4156;
+  font-family: 'Planet N', sans-serif;
   font-size: 2rem;
   padding-top: 20px;
 }
@@ -446,9 +447,7 @@ ul .desserts li {
     font-size: 1.4rem;
   }
   .menu-food {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .alien {
     width: 100%;
@@ -477,9 +476,7 @@ ul .desserts li {
     display: none;
   }
   .navbar {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   ul .pizza li,
   ul .salads li,
