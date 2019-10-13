@@ -140,7 +140,7 @@ h1 {
   margin-top: 3rem;
   text-align: left;
   font-size: 1em;
-  word-break: break-all;
+  word-wrap: normal;
 }
 .menu-main {
   background-image: url('../images/pizzaplanet.jpg');
