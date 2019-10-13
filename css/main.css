@@ -12,6 +12,12 @@
   padding: 0;
   border: 0;
 }
+#buttonsize .buttons {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-width: medium;
+  font-family: 'Roboto', sans-serif;
+}
 body,
 ul li,
 a {
@@ -102,6 +108,7 @@ h3 {
   padding: 1rem 2rem;
   font-size: 1.2rem;
   border-width: medium;
+  font-family: 'Roboto', sans-serif;
 }
 .btn:hover {
   color: #d94230 !important;

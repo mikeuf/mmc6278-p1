@@ -19,8 +19,22 @@ margin: 0;
 padding: 0;
 border: 0;
 }
+//mixins
+#fonttype() {
+  .headings {
+  font-family: 'Planet N', sans-serif;
+  }
+}
+#buttonsize{
+  .buttons{
+    padding: 1rem 2rem;
+    font-size:1.2rem;
+    border-width: medium;
+    font-family: 'Roboto', sans-serif;
 
-
+  }
+}
+//mixins end
 
 //Body
 body, ul li, a {
@@ -119,9 +133,7 @@ h3 {
   color: @yellow-primary;
   background-color: @red-primary;
   border-color: @yellow-primary;
-  padding: 1rem 2rem;
-  font-size:1.2rem;
-  border-width: medium;
+  #buttonsize.buttons();
 }
 
 .btn:hover {
@@ -148,14 +160,14 @@ h3 {
 
 h1 {
   color: @red-primary;
-  font-family: 'Planet N', sans-serif;
+  #fonttype.headings();
   font-size: 1.8rem;
 }
 
 .home-h2 {
   text-align: center;
   font-size:1.5rem;
-  font-family: 'Planet N', sans-serif;
+  #fonttype.headings();
   color: @orange-secondary;
 }
 
@@ -210,7 +222,7 @@ ul {
   padding-bottom: 10px;
   color: white;
   font-size: 1.75rem;
-  font-family: 'Planet N', sans-serif;
+  #fonttype.headings();
   text-align: center;
 }
 
@@ -251,7 +263,7 @@ h3.menu-h3 {
   color: @green-secondary;
   border-bottom: 2px solid @red-primary;
   letter-spacing: 1px;
-  font-family: 'Planet N', sans-serif;
+  #fonttype.headings();
   padding: 0px 1%;
   margin-top: 4%;
   font-size: 1rem;
@@ -317,7 +329,7 @@ ul {
   padding-top: 25px;
   padding-bottom: 10px;
   color: white;
-  font-family: 'Planet N', sans-serif;
+  #fonttype.headings();
   font-size: 2rem;
   text-align: center;
 }
@@ -334,7 +346,7 @@ ul {
     padding: 0 10px 0;
     p {
       padding-top: 10px;
-      font-family: 'Planet N', sans-serif;
+      #fonttype.headings();
       color: @green-primary;
     }
     .hours {
@@ -410,7 +422,7 @@ text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
   text-align: left;
-  font-family: 'Planet N', sans-serif;
+  #fonttype.headings();
   color: @green-secondary;
 }
 
@@ -462,7 +474,7 @@ background-color: rgba(255, 255, 255, 0.9);
 
 .order-now-button h2 {
   color: @purple-primary;
-  font-family: 'Planet N', sans-serif;
+  #fonttype.headings();
   font-size: 2rem;
   padding-top: 20px;
 }
