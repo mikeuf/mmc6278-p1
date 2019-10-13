@@ -78,7 +78,7 @@ a {
   display: block;
   color: #d94230;
   background-color: white;
-  margin: auto;
+  margin: 0 0 0 auto;
   font-size: 35px;
   text-decoration: none;
   border: 1px solid transparent;
