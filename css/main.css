@@ -383,43 +383,71 @@ ul .desserts li {
 .order-now-row {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 3%;
 }
 .order-now-col {
-  padding: 25px 1%;
   justify-content: center;
+  margin: 0;
+  padding-top: 1rem;
 }
 .order-now-button {
-  display: block
+  display: block;
   margin: 0 auto;
   overflow: hidden;
-  padding: 3rem 1rem;
   text-align: center;
   width: 100%;
   max-width: 350px;
-  height: 40vh;
-  max-height: 500px;
-  background-color: rgba(255, 255, 255, 0.6);
+  height: 10vh;
+  max-height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 0.5rem;
   border-style: solid;
   transition: all 0.25s;
 }
-.order-now-button:hover {
-  transform: scale(1.1);
-  transition: all 0.1s;
-  transition-timing-function: ease;
-  box-shadow: 1rem 1rem 4rem 1px #555555;
-}
 .order-now-button img {
+  display: none;
   padding: 20px 3% 0px;
   max-height: 250px;
 }
 .order-now-button h2 {
   color: #5e4156;
   font-family: 'Planet N', sans-serif;
-  font-size: 2rem;
-  padding-top: 2rem;
-  opacity: 0.8;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  opacity: 0.7;
+}
+@media (min-width: 450px) {
+  .order-now-button {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    height: 40vh;
+    max-height: 500px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0.5rem;
+    border-style: solid;
+    transition: all 0.25s;
+  }
+  .order-now-button:hover {
+    transform: scale(1.1);
+    transition: all 0.1s;
+    transition-timing-function: ease;
+    box-shadow: 1rem 1rem 4rem 1px #555555;
+  }
+  .order-now-button img {
+    display: inline;
+    padding: 20px 3% 0px;
+    max-height: 225px;
+  }
+  .order-now-button h2 {
+    color: #5e4156;
+    font-family: 'Planet N', sans-serif;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    opacity: 0.7;
+  }
 }
 @media (min-width: 600px) {
   ul .pizza li,
