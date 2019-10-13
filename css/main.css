@@ -4,9 +4,13 @@
   font-weight: normal;
   font-style: normal;
 }
-/* Google Fonts
-      font-family: 'Roboto', sans-serif;
-    */
+.main-font {
+  font-family: 'Roboto', sans-serif;
+}
+.round-border {
+  border-radius: 0.5rem;
+  border-style: solid;
+}
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +22,11 @@
   border-width: medium;
   font-family: 'Roboto', sans-serif;
 }
-body,
+h1,
+h2 {
+  font-family: 'Planet N', sans-serif;
+}
+p,
 ul li,
 a {
   font-family: 'Roboto', sans-serif;
@@ -39,6 +47,7 @@ a {
 .nav {
   background-color: #d94230;
   border-radius: 0.5rem;
+  border-style: solid;
   margin-bottom: 1.2%;
   width: 85%;
   overflow: hidden;
@@ -130,7 +139,6 @@ h3 {
 }
 h1 {
   color: #d94230;
-  font-family: 'Planet N', sans-serif;
   font-size: 1.8rem;
 }
 .home-h2 {
@@ -192,12 +200,12 @@ div.bluebox {
   width: 100%;
   margin: 0 auto !important;
   border-radius: 0.5rem;
+  border-style: solid;
   background-color: rgba(55, 122, 229, 0.75);
   padding-bottom: 2%;
   margin: 10px;
   color: white;
   border-width: 20%;
-  border-style: solid;
   border-color: #d94230;
 }
 h3.menu-h3 {
@@ -390,7 +398,8 @@ ul .desserts li {
   height: 50vh;
   max-height: 500px;
   background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 2rem;
+  border-radius: 0.5rem;
+  border-style: solid;
 }
 .order-now-button:hover {
   background-color: rgba(255, 255, 255, 0.9);
