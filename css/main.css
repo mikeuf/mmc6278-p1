@@ -25,6 +25,10 @@
   padding: 0;
   border: 0;
 }
+html,
+body {
+  height: 100%;
+}
 h1,
 h2 {
   font-family: 'Planet N', sans-serif;
@@ -379,10 +383,12 @@ ul .desserts li {
   background-size: cover;
   background-position: center;
   padding-bottom: 80px;
+  min-height: 85vh;
 }
 .order-now-row {
-  max-width: 1160px;
+  max-width: 960px;
   margin: 0 auto;
+  padding: 5%;
 }
 .order-now-col {
   justify-content: center;
@@ -435,6 +441,13 @@ ul .desserts li {
     transition: all 0.1s;
     transition-timing-function: ease;
     box-shadow: 1rem 1rem 4rem 1px #555555;
+  }
+  .order-now-button:focus {
+    transform: scale(1.1);
+    transition: all 0.1s;
+    transition-timing-function: ease;
+    box-shadow: 1rem 1rem 4rem 1px #555555;
+    border: solid 0.5rem #d94230;
   }
   .order-now-button img {
     display: inline;
