@@ -80,7 +80,7 @@ a {
 .show-mobile-menu {
   -webkit-transition: height 0.5s;
   transition: height 0.5s;
-  height: 30vh;
+  height: 38vh;
   margin: 1rem 0;
   width: 100%;
   -webkit-box-align: start;
