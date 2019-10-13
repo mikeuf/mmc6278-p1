@@ -44,7 +44,9 @@ a {
 }
 .navbar {
   padding: 0px !important;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #nav-logo {
   width: 100px;
@@ -56,10 +58,15 @@ a {
   margin-bottom: 1.2%;
   width: 85%;
   overflow: hidden;
+  -webkit-transition: height 0.4s;
   transition: height 0.4s;
   height: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly !important;
+  -webkit-box-pack: space-evenly !important;
+      -ms-flex-pack: space-evenly !important;
+          justify-content: space-evenly !important;
 }
 .nav .nav-link {
   color: #f4c844;
@@ -71,12 +78,18 @@ a {
   text-decoration: underline;
 }
 .show-mobile-menu {
+  -webkit-transition: height 0.5s;
   transition: height 0.5s;
   height: 19vh;
   margin: 1rem 0;
   width: 100%;
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .show-mobile-menu .nav-item {
   border-bottom: solid 3px white;
@@ -269,9 +282,13 @@ ul .desserts li {
   margin: auto;
 }
 .container-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 2%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .menu-order-button {
   margin: 0 auto;
@@ -304,6 +321,8 @@ ul .desserts li {
   background-color: rgba(105, 105, 105, 0.85);
   color: white;
   text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   padding: 0 10px 0;
@@ -408,7 +427,9 @@ ul .desserts li {
   margin: 0 auto;
 }
 .order-now-col {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding-top: 1rem;
 }
@@ -424,6 +445,7 @@ ul .desserts li {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 0.5rem;
   border-style: solid;
+  -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
 .order-now-button img {
@@ -432,7 +454,7 @@ ul .desserts li {
   max-height: 250px;
 }
 .order-now-button h2 {
-  color: #d94230;
+  color: #5e4156;
   font-family: 'Planet N', sans-serif;
   font-size: 1.5rem;
   padding-top: 0.5rem;
@@ -446,25 +468,34 @@ ul .desserts li {
     text-align: center;
     width: 100%;
     max-width: 350px;
-    height: 40vh;
+    height: 44vh;
     max-height: 500px;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 0.5rem;
     border-style: solid;
+    -webkit-transition: all 0.25s;
     transition: all 0.25s;
   }
   .order-now-button:hover {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: all 0.25s;
     transition: all 0.25s;
-    transition-timing-function: ease;
-    box-shadow: 1rem 1rem 4rem 1px #777777;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+    -webkit-box-shadow: 1rem 1rem 4rem 1px #777777;
+            box-shadow: 1rem 1rem 4rem 1px #777777;
     background-color: rgba(255, 255, 255, 0.8);
   }
   .order-now-button:focus {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all 0.1s;
     transition: all 0.1s;
-    transition-timing-function: ease;
-    box-shadow: 1rem 1rem 4rem 1px #555555;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+    -webkit-box-shadow: 1rem 1rem 4rem 1px #555555;
+            box-shadow: 1rem 1rem 4rem 1px #555555;
     border: solid 0.5rem #d94230;
   }
   .order-now-button img {
@@ -527,7 +558,9 @@ ul .desserts li {
     font-size: 1.4rem;
   }
   .menu-food {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .alien {
     width: 100%;
@@ -559,7 +592,9 @@ ul .desserts li {
     display: none;
   }
   .navbar {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   ul .pizza li,
   ul .salads li,
@@ -576,10 +611,17 @@ ul .desserts li {
     margin-bottom: 1.2%;
     width: 85%;
     overflow: hidden;
+    -webkit-transition: height 0.4s;
     transition: height 0.4s;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly !important;
-    align-items: center;
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .nav .nav-item {
     width: initial;
