@@ -329,8 +329,12 @@ ul .desserts li {
   margin: 0 auto;
   padding: 3% 1rem 3% 1rem;
 }
+.directions-col {
+  max-width: 500px;
+  margin: 0 auto;
+}
 .directions-col-left {
-  padding: 12px 12%;
+  padding: 2rem 2rem 2rem 3rem;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   text-align: left;
@@ -339,6 +343,8 @@ ul .desserts li {
 }
 .directions-col-right {
   text-align: center;
+  padding: 0;
+  max-height: 575px;
 }
 .directions-col-right iframe {
   width: 100%;
@@ -416,6 +422,9 @@ ul .desserts li {
   }
   .directions-body h2 {
     font-size: 2rem;
+  }
+  .directions-col-left {
+    padding: 5% 7.5%;
   }
   h3.menu-h3 {
     font-size: 1.25rem;
