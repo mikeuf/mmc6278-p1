@@ -446,10 +446,11 @@ ul .desserts li {
     transition: all 0.25s;
   }
   .order-now-button:hover {
-    transform: scale(1.1);
-    transition: all 0.1s;
+    transform: scale(1.05);
+    transition: all 0.25s;
     transition-timing-function: ease;
-    box-shadow: 1rem 1rem 4rem 1px #555555;
+    box-shadow: 1rem 1rem 4rem 1px #777777;
+    background-color: rgba(255, 255, 255, 0.8);
   }
   .order-now-button:focus {
     transform: scale(1.1);
