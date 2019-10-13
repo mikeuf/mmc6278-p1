@@ -334,7 +334,7 @@ ul .desserts li {
   margin: 0 auto;
 }
 .directions-col-left {
-  padding: 2rem 2rem 2rem 3rem;
+  padding: 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   text-align: left;
@@ -424,7 +424,7 @@ ul .desserts li {
     font-size: 2rem;
   }
   .directions-col-left {
-    padding: 5% 7.5%;
+    padding: 2rem 3rem;
   }
   h3.menu-h3 {
     font-size: 1.25rem;
