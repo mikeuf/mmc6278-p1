@@ -108,7 +108,9 @@ p, ul li, a {
   border: 1px solid transparent;
 }
 
-
+main {
+min-height: 85vh; 
+}
 
 //Footer All Pages
 footer {
@@ -133,7 +135,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height:250px;
+  height:25vh;
 }
 
 .mainlogo {
@@ -338,6 +340,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  opacity: 0.9;
 }
 
 .about-h2 {
@@ -372,7 +375,7 @@ ul {
 }
 
 #about-main-inner {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -429,12 +432,10 @@ margin: 0 auto;
 .directions-col-right {
 text-align: center;
 padding: 0;
-max-height: 575px;
 }
 
 .directions-col-right iframe {
   width: 100%;
-  max-width: 899px;
   margin-top: 0;
   border-radius: 0.5rem;
  }
@@ -446,7 +447,7 @@ max-height: 575px;
   text-align: left;
 }
 
-.directions-body h2 {
+.directions-body h1, .directions-body h2 {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: left;
@@ -469,6 +470,14 @@ margin-bottom: 1rem;
   background-position: center;
   padding-bottom: 80px;
   min-height: 85vh;
+}
+
+.order-now-main h1 {
+color: @red-primary;
+opacity: 0.8;
+padding: 1.5rem;
+font-size: 2rem;
+text-align: center;
 }
 
 .order-now-row {
@@ -504,7 +513,7 @@ transition: all 0.25s;
 }
 
 .order-now-button h2 {
-  color: @purple-primary;
+color: @red-primary;
   .headings();
   font-size: 1.5rem;
   padding-top: 0.5rem;
@@ -554,11 +563,9 @@ transition-timing-function: ease;
 }
 
 .order-now-button h2 {
-  color: @purple-primary;
   .headings();
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-top: 2rem;
-  opacity: 0.7;
 }
 
 
@@ -580,7 +587,7 @@ transition-timing-function: ease;
     font-size: 1.2rem;
   }
 
-  .directions-body h2 {
+  .directions-body h1, .directions-body h2 {
     font-size: 2rem;
   }
 
@@ -654,6 +661,10 @@ transition-timing-function: ease;
 @media (min-width:890px) {
   .nav {
     height:40px;
+  }
+
+  .hero {
+height: 35vh;
   }
 
   #hamburger {

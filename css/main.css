@@ -83,6 +83,9 @@ a {
   text-decoration: none;
   border: 1px solid transparent;
 }
+main {
+  min-height: 85vh;
+}
 footer {
   background-color: #0e133e;
   color: white;
@@ -100,7 +103,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 250px;
+  height: 25vh;
 }
 .mainlogo {
   width: 10%;
@@ -275,6 +278,7 @@ ul .desserts li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  opacity: 0.9;
 }
 .about-h2 {
   padding-top: 25px;
@@ -306,7 +310,7 @@ ul .desserts li {
   padding: 0 15px 15px 15px;
 }
 #about-main-inner {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
 }
 .greybox {
@@ -352,11 +356,9 @@ ul .desserts li {
 .directions-col-right {
   text-align: center;
   padding: 0;
-  max-height: 575px;
 }
 .directions-col-right iframe {
   width: 100%;
-  max-width: 899px;
   margin-top: 0;
   border-radius: 0.5rem;
 }
@@ -366,6 +368,7 @@ ul .desserts li {
   color: white;
   text-align: left;
 }
+.directions-body h1,
 .directions-body h2 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -384,6 +387,13 @@ ul .desserts li {
   background-position: center;
   padding-bottom: 80px;
   min-height: 85vh;
+}
+.order-now-main h1 {
+  color: #d94230;
+  opacity: 0.8;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
 }
 .order-now-row {
   max-width: 960px;
@@ -415,7 +425,7 @@ ul .desserts li {
   max-height: 250px;
 }
 .order-now-button h2 {
-  color: #5e4156;
+  color: #d94230;
   font-family: 'Planet N', sans-serif;
   font-size: 1.5rem;
   padding-top: 0.5rem;
@@ -455,11 +465,9 @@ ul .desserts li {
     max-height: 225px;
   }
   .order-now-button h2 {
-    color: #5e4156;
     font-family: 'Planet N', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding-top: 2rem;
-    opacity: 0.7;
   }
 }
 @media (min-width: 600px) {
@@ -474,6 +482,7 @@ ul .desserts li {
   .underline {
     font-size: 1.2rem;
   }
+  .directions-body h1,
   .directions-body h2 {
     font-size: 2rem;
   }
@@ -534,6 +543,9 @@ ul .desserts li {
 @media (min-width: 890px) {
   .nav {
     height: 40px;
+  }
+  .hero {
+    height: 35vh;
   }
   #hamburger {
     display: none;
