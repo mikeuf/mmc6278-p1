@@ -94,8 +94,17 @@ p, ul li, a {
 }
 
 .show-mobile-menu {
-  height: 120px;
   transition: height 0.5s;
+  height: 19vh;
+  margin: 1rem 0;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.show-mobile-menu .nav-item {
+border-bottom: solid 3px white;
+width: 100%;
 }
 
 #hamburger {
@@ -682,6 +691,33 @@ height: 35vh;
   ul .desserts li {
     font-size: 1.2rem;
   }
+
+
+.nav {
+  background-color: @red-primary;
+  .round-border();
+  margin-bottom: 1.2%;
+  width: 85%;
+  overflow: hidden;
+  transition: height 0.4s;
+  display: flex;
+  justify-content: space-evenly !important;
+  align-items: center;
+  .nav-item {
+    width: initial;
+    border: 0;
+  }
+  .nav-link {
+    color: @yellow-primary;
+    text-transform: uppercase;
+  }
+  .nav-link:hover {
+    font-weight: bold;
+    color: @yellow-primary;
+    text-decoration: underline;
+  }
+}
+
 }
 
 @media (min-width: 992px) {

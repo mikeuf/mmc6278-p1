@@ -71,8 +71,16 @@ a {
   text-decoration: underline;
 }
 .show-mobile-menu {
-  height: 120px;
   transition: height 0.5s;
+  height: 19vh;
+  margin: 1rem 0;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.show-mobile-menu .nav-item {
+  border-bottom: solid 3px white;
+  width: 100%;
 }
 #hamburger {
   display: block;
@@ -560,6 +568,31 @@ ul .desserts li {
   ul .kids li,
   ul .desserts li {
     font-size: 1.2rem;
+  }
+  .nav {
+    background-color: #d94230;
+    border-radius: 0.5rem;
+    border-style: solid;
+    margin-bottom: 1.2%;
+    width: 85%;
+    overflow: hidden;
+    transition: height 0.4s;
+    display: flex;
+    justify-content: space-evenly !important;
+    align-items: center;
+  }
+  .nav .nav-item {
+    width: initial;
+    border: 0;
+  }
+  .nav .nav-link {
+    color: #f4c844;
+    text-transform: uppercase;
+  }
+  .nav .nav-link:hover {
+    font-weight: bold;
+    color: #f4c844;
+    text-decoration: underline;
   }
 }
 @media (min-width: 992px) {
